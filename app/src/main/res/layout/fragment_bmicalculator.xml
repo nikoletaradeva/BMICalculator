@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#21262C">
+
+    <ImageView
+        android:id="@+id/imgbmi"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/scale"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="scale"/>
+
+    <RadioGroup
+        android:id="@+id/radioGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtView"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite"
+            android:buttonTint="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="Female" />
+
+        <RadioButton
+            android:id="@+id/radioButtonTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:textColor="@color/colorWhite"
+            android:buttonTint="@color/colorPrimary"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:text="Male" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Weight in KG"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:layout_marginHorizontal="30dp" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:padding="11dp"
+        android:inputType="numberDecimal"
+        android:layout_marginVertical="15dp"
+        android:background="@drawable/edit_bg"
+        android:textColor="@color/colorWhite"
+        android:autofillHints="@string/weight"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Height in CM"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="15dp"
+        android:textColor="#FFF"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:padding="11dp"
+        android:inputType="numberDecimal"
+        android:background="@drawable/edit_bg"
+        android:textColor="#FFF"
+        android:autofillHints="@string/height" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="15dp"
+        android:background="@drawable/button_bg"
+        android:drawableTop="@drawable/ic_favorite"
+        android:padding="5dp"
+        android:text="Calculate"
+        android:textColor="#FFF"
+        style="?android:attr/borderlessButtonStyle" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Your BMI"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:gravity="center_horizontal"
+        android:textColor="#FFF"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/lblBMI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#FFF" />
+</LinearLayout>

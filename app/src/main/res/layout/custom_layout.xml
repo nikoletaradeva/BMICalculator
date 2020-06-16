@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"
+    android:stretchColumns="*">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:textSize="15dp"
+            android:padding="10dp"
+            android:layout_span="1"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textSize="15dp"
+            android:padding="10dp"
+            android:layout_span="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI"
+            android:textSize="15dp"
+            android:padding="10dp"
+            android:layout_span="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type"
+            android:textSize="15dp"
+            android:padding="10dp"
+            android:layout_span="1"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/txtrowid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_span="1"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:text="@string/txt"
+                />
+
+            <TextView
+                android:id="@+id/txtbmidate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_span="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:text="@string/txt" />
+
+            <TextView
+                android:id="@+id/txtbmivalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_span="1"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:text="@string/txt" />
+            <TextView
+                android:id="@+id/txtbmitype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_span="1"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:text="@string/txt" />
+        </TableRow>
+</TableLayout>

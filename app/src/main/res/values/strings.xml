@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BMICalculator</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="Calculate">Calculate</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="bmivalue">Your BMI</string>
+    <string name="username">Nikoleta Radeva</string>
+    <string name="emailaddress">radeva.nikoleta98@gmail.com</string>
+    <string name="ViewData">View Data</string>
+    <string name="delete">Delete</string>
+    <string name="txt">txt</string>
+</resources>
